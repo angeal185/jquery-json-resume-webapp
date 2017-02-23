@@ -1,0 +1,581 @@
+var mainTplData = {};
+
+var mainTpl = [
+  {"<>":"div","id":"loader","html":[
+      {"<>":"div","id":"loaderInner","html":[
+          {"<>":"h1","html":"Add name here"},
+          {"<>":"p","class":"loading","html":"is loading..."}
+        ]}
+    ]},
+  {"<>":"div","id":"wrapper","html":[
+      {"<>":"header","id":"header","class":"clearfix","html":[
+          {"<>":"div","class":"holder960","html":[
+              {"<>":"a","href":"#","class":"mobileBtn","html":[
+                  {"<>":"i","class":"icon-menu","html":""}
+                ]},
+              {"<>":"nav","id":"mainNav","html":[
+                  {"<>":"ul","class":"navTpl","html":""}
+                ]}
+            ]}
+        ]},
+      {"<>":"div","id":"teaser","class":"clearfix","html":[
+          {"<>":"div","class":"overlay","html":[
+              {"<>":"div","class":"holder960 clearfix","html":[
+                  {"<>":"div","class":"teaserTitle","html":[
+                      {"<>":"h1","html":[
+                          {"<>":"span","class":"rotate","html":"Add title here"}
+                        ]}
+                    ]},
+                  {"<>":"div","class":"captions","html":[
+                      {"<>":"p","data-lorem":"1s","html":""}
+                    ]}
+                ]}
+            ]}
+        ]},
+      {"<>":"section","id":"about","class":"clearfix","html":[
+          {"<>":"div","class":"secTitle","html":[
+              {"<>":"h1","html":"about me"},
+              {"<>":"p","data-lorem":"1s","html":[
+                  {"<>":"br","data-lorem":"6w","html":""}
+                ]}
+            ]},
+          {"<>":"div","class":"holder960 clearfix","html":[
+              {"<>":"div","class":"innerTitle","html":[
+                  {"<>":"h1","data-lorem":"5w","html":""},
+                  {"<>":"p","data-lorem":"1s","html":""}
+                ]},
+              {"<>":"div","class":"userProfile top nBottom","html":[
+                  {"<>":"div","class":"imgProfile","html":[
+                      {"<>":"img","src":"static/images/profile.jpg","width":"200","height":"200","html":""}
+                    ]},
+                  {"<>":"div","class":"getBtn","html":[
+                      {"<>":"div","class":"ico","html":[
+                          {"<>":"a","href":"#","html":[
+                              {"<>":"i","class":"icon-print-1","html":""}
+                            ]}
+                        ]},
+                      {"<>":"div","class":"ico","html":[
+                          {"<>":"a","href":"#","html":[
+                              {"<>":"i","class":"icon-download","html":""}
+                            ]}
+                        ]},
+                      {"<>":"h3","html":"Print / Download My CV"}
+                    ]},
+                  {"<>":"div","class":"followBtn","html":[
+                      {"<>":"div","class":"ico","html":[
+                          {"<>":"a","href":"#","class":"fb","html":[
+                              {"<>":"i","class":"icon-facebook","html":""}
+                            ]}
+                        ]},
+                      {"<>":"div","class":"ico","html":[
+                          {"<>":"a","class":"tw","href":"#","html":[
+                              {"<>":"i","class":"icon-twitter","html":""}
+                            ]}
+                        ]},
+                      {"<>":"h3","html":"Follow Me On"}
+                    ]}
+                ]},
+              {"<>":"div","id":"skills","class":"clearfix","html":[
+                  {"<>":"div","class":"divider","html":[
+                      {"<>":"span","html":[
+                          {"<>":"i","class":"icon-star-filled","html":""}
+                        ]}
+                    ]},
+                  {"<>":"div","class":"innerTitle","html":[
+                      {"<>":"h1","html":"main skills"},
+                      {"<>":"p","data-lorem":"1s","html":""}
+                    ]},
+                  {"<>":"div","class":"skillsHolder clearfix top nBottom","html":[
+                      {"<>":"div","class":"skills column","html":" "},
+                      {"<>":"div","class":"textWidget column","html":[
+                          {"<>":"h1","data-lorem":"4w","html":""},
+                          {"<>":"p","data-lorem":"1p","html":""}
+                        ]}
+                    ]}
+                ]},
+              {"<>":"div","class":"infoContainer top nTop clearfix","html":[
+                  {"<>":"div","class":"divider","html":[
+                      {"<>":"span","html":[
+                          {"<>":"i","class":"icon-star-filled","html":""}
+                        ]}
+                    ]},
+                  {"<>":"div","class":"innerTitle","html":[
+                      {"<>":"h1","html":"my contact information"},
+                      {"<>":"p","data-lorem":"1s","html":""}
+                    ]},
+                  {"<>":"div","class":"infoHolder top","html":[
+                      {"<>":"div","class":"address","html":[
+                          {"<>":"i","class":"icon-location","html":""},
+                          {"<>":"p","html":"The Company Name Inc.1234 Street Road,City Name,IN 567 890."}
+                        ]},
+                      {"<>":"div","class":"info","html":[
+                          {"<>":"ul","class":"infoTpl","html":" "}
+                        ]}
+                    ]}
+                ]}
+            ]}
+        ]},
+      {"<>":"section","id":"resume","class":"clearfix section","html":[
+          {"<>":"div","class":"secTitle","html":[
+              {"<>":"h1","html":"resume"},
+              {"<>":"p","data-lorem":"1s","html":[
+                  {"<>":"br","data-lorem":"is","html":""}
+                ]}
+            ]},
+          {"<>":"div","class":"holder960 clearfix","html":[
+              {"<>":"div","class":"resumeContainer","html":[
+                  {"<>":"div","class":"innerTitle","html":[
+                      {"<>":"h1","html":"my Employment"},
+                      {"<>":"p","data-lorem":"1s","html":""}
+                    ]},
+                  {"<>":"div","class":"emHolder top clearfix","html":[
+                      {"<>":"div","class":"innerEm clearfix","html":""}
+                    ]},
+                  {"<>":"div","class":"divider","html":[
+                      {"<>":"span","html":[
+                          {"<>":"i","class":"icon-star-filled","html":""}
+                        ]}
+                    ]},
+                  {"<>":"div","class":"innerTitle","html":[
+                      {"<>":"h1","html":"my education"},
+                      {"<>":"p","data-lorem":"1s","html":""}
+                    ]},
+                  {"<>":"div","class":"edHolder top clearfix","html":[
+                      {"<>":"div","class":"innerEd clearfix","html":""}
+                    ]}
+                ]}
+            ]},
+          {"<>":"div","class":"cta","html":[
+              {"<>":"p","data-lorem":"1s","html":[
+                  {"<>":"br","data-lorem":"5w","html":""},
+                  {"<>":"a","href":"#contact","html":"contact me"}
+                ]}
+            ]}
+        ]},
+      {"<>":"section","id":"testimonials","html":[
+          {"<>":"div","class":"testimoniaContainer","html":[
+              {"<>":"div","class":"overlay","html":[
+                  {"<>":"div","class":"holder960 clearfix","html":[
+                      {"<>":"div","class":"testimonialContent","html":""}
+                    ]}
+                ]}
+            ]}
+        ]},
+      {"<>":"section","id":"portfolio","class":"clearfix section","html":[
+          {"<>":"div","class":"secTitle","html":[
+              {"<>":"h1","html":"portfolio"},
+              {"<>":"p","data-lorem":"1s","html":[
+                  {"<>":"br","data-lorem":"1s","html":""}
+                ]}
+            ]},
+          {"<>":"div","class":"holder960 clearfix","html":[
+              {"<>":"div","class":"portfolioContainer","html":[
+                  {"<>":"div","class":"innerTitle","html":[
+                      {"<>":"h1","html":"check out my works"},
+                      {"<>":"p","data-lorem":"1s","html":""}
+                    ]},
+                  {"<>":"div","class":"divider","html":[
+                      {"<>":"span","html":[
+                          {"<>":"i","class":"icon-star-filled","html":""}
+                        ]}
+                    ]},
+                  {"<>":"div","class":"filterNav","html":[
+                      {"<>":"ul","id":"category","class":"filter","html":" "}
+                    ]},
+                  {"<>":"div","id":"works","class":"clearfix","html":[
+                      {"<>":"ul","id":"portData","class":"portfolio clearfix","html":""}
+                    ]}
+                ]}
+            ]}
+        ]},
+      {"<>":"section","id":"contact","class":"clearfix section","html":""}
+    ]}
+];
+
+var navTplData = [
+	{
+		"href": "#wrapper",
+		"name": "Home"
+	}, {
+		"href": "#about",
+		"name": "About"
+	}, {
+		"href": "#resume",
+		"name": "Resume"
+	}, {
+		"href": "#portfolio",
+		"name": "Portfolio"
+	}, {
+		"href": "#contact",
+		"name": "Contact"
+	}
+];
+
+var skillzTplData = [
+	{
+		"title": "SKILL 1",
+		"percent": "90",
+		"number": "90%"
+	},{
+		"title": "SKILL 2",
+		"percent": "80",
+		"number": "80%"
+	},{
+		"title": "SKILL 3",
+		"percent": "80",
+		"number": "80%"
+	},{
+		"title": "SKILL 4",
+		"percent": "60",
+		"number": "60%"
+	},{
+		"title": "SKILL 5",
+		"percent": "50",
+		"number": "50%"
+	},{
+		"title": "SKILL 6",
+		"percent": "90",
+		"number": "90%"
+	}
+];
+
+var skillzTpl =
+{"<>":"div","class":"skillBar","html":[
+    {"<>":"div","class":"skillbarHolder","html":[
+        {"<>":"div","class":"skillbarTitle","html":"${title}"},
+        {"<>":"div","class":"percentage percent${percent}","html":[
+            {"<>":"span","html":"${number}"}
+          ]}
+      ]}
+  ]}	
+	
+var navTpl =
+{"<>":"li","html":[
+    {"<>":"a","href":"${href}","html":"${name}"}
+  ]};
+
+var infoTplData = [
+	{
+		"icon": "icon-mail",
+		"info": "Email : name@gmail.com"
+	},{
+		"icon": "icon-phone",
+		"info": "Tel : 000 000 000"
+	},{
+		"icon": "icon-link",
+		"info": "www.yoursite.com"
+	}
+];
+  
+var infoTpl = 
+{"<>":"li","html":[
+    {"<>":"div","class":"ico","html":[
+        {"<>":"i","class":"${icon}","html":""}
+      ]},
+    {"<>":"p","html":"${info}"}
+  ]};
+  
+var exTplData = [
+	{
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }
+];
+
+var exTpl = 
+{"<>":"div","class":"ed column","html":[
+    {"<>":"div","class":"edIco","html":[
+        {"<>":"i","class":"icon-graduation-cap","html":""}
+      ]},
+    {"<>":"div","class":"edDesc","html":[
+        {"<>":"h3","html":"${title}:  ${location}"},
+        {"<>":"h6","html":"${date}: ${year}"},
+        {"<>":"p","data-lorem":"3s","html":"${info}"}
+      ]}
+  ]};
+
+var eduTplData = [
+	{
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }, {
+        "title": "add title",
+        "location": "add location",
+        "date": "jan 01",
+        "year": "2099",
+        "info": ""
+    }
+];
+
+
+var eduTpl = 
+{"<>":"div","class":"ed column","html":[
+    {"<>":"div","class":"edIco","html":[
+        {"<>":"i","class":"icon-graduation-cap","html":""}
+      ]},
+    {"<>":"div","class":"edDesc","html":[
+        {"<>":"h3","html":"${title}:  ${location}"},
+        {"<>":"h6","html":"${date}: ${year}"},
+        {"<>":"p","data-lorem":"3s","html":"${info}"}
+      ]}
+  ]};
+
+var testimonialsTplData = [
+    {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }, {
+        "quote": "",
+        "name": ""
+    }
+];
+
+var testimonialsTpl = 
+{"<>":"div","class":"testi","html":[
+    {"<>":"blockquote","data-lorem":"2s","html":"${quote}"},
+    {"<>":"div","class":"testiProfile","html":[
+        {"<>":"div","class":"nameProfile","html":[
+            {"<>":"h3","data-lorem":"2w","html":"${name}"}
+          ]}
+      ]}
+  ]}
+
+var portfolioNavTplData = [
+    {
+        "class": "all current",
+        "name": "All"
+    },{
+        "class": "catWeb",
+        "name": "Web Design"
+    },{
+        "class": "catGraphic",
+        "name": "Graphic Design"
+    },{
+        "class": "catMotion",
+        "name": "Motion Graphic"
+    }
+]; 
+  
+var portfolioNavTpl =  
+{"<>":"li","class":"${class}","html":[
+    {"<>":"a","href":"#","html":"${name}"}
+  ]}; 
+  
+var portfolioItemTplData = [
+    {
+        "id": "1",
+        "type": "catWeb",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }, {
+        "id": "2",
+        "type": "catGraphic",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }, {
+        "id": "3",
+        "type": "catMotion",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }, {
+        "id": "4",
+        "type": "catWeb",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }, {
+        "id": "5",
+        "type": "catGraphic",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }, {
+        "id": "6",
+        "type": "catMotion",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }, {
+        "id": "7",
+        "type": "catWeb",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }, {
+        "id": "8",
+        "type": "catGraphic",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }, {
+        "id": "9",
+        "type": "catMotion",
+        "srcimg": "static/images/portfolioImages/work1.jpg",
+        "title": "Project Title Goes Here",
+        "label": "",
+        "hrefimg": "static/images/portfolioImages/workLarge.jpg"
+    }
+];
+
+var portfolioItemTpl = 
+{"<>":"li","data-id":"id-${id}","data-type":"${type}","class":"item","html":[
+    {"<>":"div","class":"browserBar","html":""},
+    {"<>":"div","class":"folioImg","html":[
+        {"<>":"img","src":"${srcimg}","html":""}
+      ]},
+    {"<>":"div","class":"workDesc","html":[
+        {"<>":"h3","data-lorem":"3w","html":[
+            {"<>":"br","html":"${title}"},
+            {"<>":"span","html":"${label}"}
+          ]},
+        {"<>":"a","class":"prev","href":"${hrefimg}","html":[
+            {"<>":"i","class":"icon-search","html":""}
+          ]}
+      ]}
+  ]}
+
+
+var footerTplData = {
+    "year": "2016",
+    "name": "Ben eaves",
+    "linka": "#",
+    "linkb": "#",
+    "infoa": "Hire me",
+    "infob": "Print CV"
+};
+
+var footerTpl = 
+{"<>":"footer","id":"footer","html":[
+    {"<>":"div","class":"bottom clearfix","html":[
+        {"<>":"div","class":"holder960 clearfix","html":[
+            {"<>":"p","html":"${year} ${name}"},
+            {"<>":"ul","html":[
+                {"<>":"li","html":[
+                    {"<>":"a","href":"${linka}","html":"${infoa}"}
+                  ]},
+                {"<>":"li","html":[
+                    {"<>":"a","href":"${linkb}","html":"${infob}"}
+                  ]}
+              ]}
+          ]}
+      ]}
+  ]};
